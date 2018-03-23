@@ -1,0 +1,441 @@
+{
+    "10": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LWB010",
+        "name": "W_cabina_fondo",
+        "productid": "Philips-LWB010-1-A19DLv4",
+        "state": {
+            "alert": "none",
+            "bri": 254,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "FF6681C4",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.23.0_r20156",
+        "type": "Dimmable light",
+        "uniqueid": "00:17:88:01:03:b5:14:df-0b"
+    },
+    "11": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_letto_angolo_anti",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 142,
+            "colormode": "ct",
+            "ct": 454,
+            "mode": "homeautomation",
+            "on": true,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:20:17:64-0b"
+    },
+    "12": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LWB010",
+        "name": "W_cabina_finestra",
+        "productid": "Philips-LWB010-1-A19DLv4",
+        "state": {
+            "alert": "none",
+            "bri": 254,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "FF6681C4",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.23.0_r20156",
+        "type": "Dimmable light",
+        "uniqueid": "00:17:88:01:03:e8:88:d8-0b"
+    },
+    "13": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LCT010",
+        "name": "C_letto_parete_sogg",
+        "productid": "Philips-LCT010-1-A19ECLv4",
+        "state": {
+            "alert": "none",
+            "bri": 165,
+            "colormode": "xy",
+            "ct": 153,
+            "effect": "none",
+            "hue": 3650,
+            "mode": "homeautomation",
+            "on": true,
+            "reachable": true,
+            "sat": 254,
+            "xy": [
+                0.6171,
+                0.3641
+            ]
+        },
+        "swconfigid": "F921C859",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.15.2_r19181",
+        "type": "Extended color light",
+        "uniqueid": "00:17:88:01:02:93:35:40-0b"
+    },
+    "14": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LWB010",
+        "name": "W_bagno_amb",
+        "productid": "Philips-LWB010-1-A19DLv4",
+        "state": {
+            "alert": "none",
+            "bri": 254,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "FF6681C4",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.23.0_r20156",
+        "type": "Dimmable light",
+        "uniqueid": "00:17:88:01:03:48:70:fe-0b"
+    },
+    "15": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LWB010",
+        "name": "W_bagno_lavabo",
+        "productid": "Philips-LWB010-1-A19DLv4",
+        "state": {
+            "alert": "none",
+            "bri": 254,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "FF6681C4",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.23.0_r20156",
+        "type": "Dimmable light",
+        "uniqueid": "00:17:88:01:03:0d:da:3b-0b"
+    },
+    "16": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LWB010",
+        "name": "W_lampada",
+        "productid": "Philips-LWB010-1-A19DLv3",
+        "state": {
+            "alert": "select",
+            "bri": 254,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": false
+        },
+        "swconfigid": "C40F3F07",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.29.0_r21169",
+        "type": "Dimmable light",
+        "uniqueid": "00:17:88:01:02:b2:86:ba-0b"
+    },
+    "2": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LCT010",
+        "name": "C_letto_condiz",
+        "productid": "Philips-LCT010-1-A19ECLv4",
+        "state": {
+            "alert": "none",
+            "bri": 157,
+            "colormode": "xy",
+            "ct": 153,
+            "effect": "none",
+            "hue": 3901,
+            "mode": "homeautomation",
+            "on": true,
+            "reachable": true,
+            "sat": 254,
+            "xy": [
+                0.612,
+                0.368
+            ]
+        },
+        "swconfigid": "F921C859",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.15.2_r19181",
+        "type": "Extended color light",
+        "uniqueid": "00:17:88:01:02:d8:d5:5a-0b"
+    },
+    "3": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_letto_parete_cabina",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 145,
+            "colormode": "ct",
+            "ct": 454,
+            "mode": "homeautomation",
+            "on": true,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:80:d5:5e-0b"
+    },
+    "4": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_sogg_balcone",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 251,
+            "colormode": "ct",
+            "ct": 443,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:59:f7:51-0b"
+    },
+    "5": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_antibagno",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 254,
+            "colormode": "ct",
+            "ct": 443,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:f1:27:c6-0b"
+    },
+    "6": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_sogg_parete_letto",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 251,
+            "colormode": "ct",
+            "ct": 443,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:53:2a:3b-0b"
+    },
+    "7": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_sogg_entrata",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 251,
+            "colormode": "ct",
+            "ct": 443,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:59:ac:fe-0b"
+    },
+    "8": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_letto_parete_bagno",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 147,
+            "colormode": "ct",
+            "ct": 454,
+            "mode": "homeautomation",
+            "on": true,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:85:42:0e-0b"
+    },
+    "9": {
+        "capabilities": {
+            "streaming": {
+                "proxy": false,
+                "renderer": false
+            }
+        },
+        "manufacturername": "Philips",
+        "modelid": "LTW010",
+        "name": "A_sogg_angolo_cucina",
+        "productid": "Philips-LTW010-1-A19CTv2",
+        "state": {
+            "alert": "none",
+            "bri": 251,
+            "colormode": "ct",
+            "ct": 443,
+            "mode": "homeautomation",
+            "on": false,
+            "reachable": true
+        },
+        "swconfigid": "930193B0",
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "1.19.0_r19755",
+        "type": "Color temperature light",
+        "uniqueid": "00:17:88:01:03:59:b2:23-0b"
+    }
+}

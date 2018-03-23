@@ -1,0 +1,734 @@
+{
+    "1": {
+        "actions": [
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "scene": "OvGXW3LghjVWnwE"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T08:00:00/T23:00:00"
+            },
+            {
+                "address": "/sensors/4/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T19:15:32",
+        "lasttriggered": "2018-02-24T18:23:21",
+        "name": "MotionSensor 3.day-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 13
+    },
+    "10": {
+        "actions": [
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "scene": "ytqZLeWyjKW998B"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T07:00:00/T02:00:00"
+            },
+            {
+                "address": "/sensors/8/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/8/state/dark",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.day-dark-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "11": {
+        "actions": [
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "scene": "UcEEvmvhBdI0EHp"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T02:00:00/T07:00:00"
+            },
+            {
+                "address": "/sensors/8/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.night-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "12": {
+        "actions": [
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "scene": "UcEEvmvhBdI0EHp"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T02:00:00/T07:00:00"
+            },
+            {
+                "address": "/sensors/8/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/8/state/dark",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.night-dark-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "13": {
+        "actions": [
+            {
+                "address": "/scenes/Hgba0N8gVbQlSBA",
+                "body": {
+                    "storelightstate": true
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "bri_inc": -128
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 2
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "false"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "ddx",
+                "value": "PT00:14:15"
+            },
+            {
+                "address": "/groups/4/state/any_on",
+                "operator": "eq",
+                "value": "true"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.dim",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "14": {
+        "actions": [
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "scene": "Hgba0N8gVbQlSBA"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "gt",
+                "value": "1"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.recover",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "15": {
+        "actions": [
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "on": false
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 0
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "false"
+            },
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "gt",
+                "value": "1"
+            },
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "ddx",
+                "value": "PT00:00:30"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.off",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "16": {
+        "actions": [
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 0
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/groups/4/state/any_on",
+                "operator": "eq",
+                "value": "false"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "false"
+            }
+        ],
+        "created": "2018-02-23T23:42:39",
+        "lasttriggered": "2018-02-23T23:42:50",
+        "name": "MotionSensor 7.arm",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 1
+    },
+    "2": {
+        "actions": [
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "scene": "OvGXW3LghjVWnwE"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T08:00:00/T23:00:00"
+            },
+            {
+                "address": "/sensors/4/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/4/state/dark",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T19:15:32",
+        "lasttriggered": "none",
+        "name": "MotionSensor 3.day-dark-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "3": {
+        "actions": [
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "scene": "zIgYCYHTdRZjYeE"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T23:00:00/T08:00:00"
+            },
+            {
+                "address": "/sensors/4/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T19:15:32",
+        "lasttriggered": "2018-02-24T22:27:59",
+        "name": "MotionSensor 3.night-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 4
+    },
+    "4": {
+        "actions": [
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "scene": "zIgYCYHTdRZjYeE"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T23:00:00/T08:00:00"
+            },
+            {
+                "address": "/sensors/4/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/4/state/dark",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T19:15:32",
+        "lasttriggered": "2018-02-23T22:34:23",
+        "name": "MotionSensor 3.night-dark-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 1
+    },
+    "5": {
+        "actions": [
+            {
+                "address": "/scenes/qX5zYZl0-pe1Njq",
+                "body": {
+                    "storelightstate": true
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "bri_inc": -128
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 2
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "false"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "ddx",
+                "value": "PT00:14:15"
+            },
+            {
+                "address": "/groups/1/state/any_on",
+                "operator": "eq",
+                "value": "true"
+            }
+        ],
+        "created": "2018-02-23T19:15:33",
+        "lasttriggered": "2018-02-24T17:19:41",
+        "name": "MotionSensor 3.dim",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 3
+    },
+    "6": {
+        "actions": [
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "scene": "qX5zYZl0-pe1Njq"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "gt",
+                "value": "1"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T19:15:33",
+        "lasttriggered": "none",
+        "name": "MotionSensor 3.recover",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    },
+    "7": {
+        "actions": [
+            {
+                "address": "/groups/1/action",
+                "body": {
+                    "on": false
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 0
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "false"
+            },
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "gt",
+                "value": "1"
+            },
+            {
+                "address": "/sensors/5/state/status",
+                "operator": "ddx",
+                "value": "PT00:00:30"
+            }
+        ],
+        "created": "2018-02-23T19:15:33",
+        "lasttriggered": "2018-02-24T17:20:11",
+        "name": "MotionSensor 3.off",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 3
+    },
+    "8": {
+        "actions": [
+            {
+                "address": "/sensors/5/state",
+                "body": {
+                    "status": 0
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/groups/1/state/any_on",
+                "operator": "eq",
+                "value": "false"
+            },
+            {
+                "address": "/sensors/3/state/presence",
+                "operator": "eq",
+                "value": "false"
+            }
+        ],
+        "created": "2018-02-23T19:15:33",
+        "lasttriggered": "2018-02-24T22:27:53",
+        "name": "MotionSensor 3.arm",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 16
+    },
+    "9": {
+        "actions": [
+            {
+                "address": "/groups/4/action",
+                "body": {
+                    "scene": "ytqZLeWyjKW998B"
+                },
+                "method": "PUT"
+            },
+            {
+                "address": "/sensors/9/state",
+                "body": {
+                    "status": 1
+                },
+                "method": "PUT"
+            }
+        ],
+        "conditions": [
+            {
+                "address": "/sensors/9/state/status",
+                "operator": "lt",
+                "value": "1"
+            },
+            {
+                "address": "/config/localtime",
+                "operator": "in",
+                "value": "T07:00:00/T02:00:00"
+            },
+            {
+                "address": "/sensors/8/state/dark",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "eq",
+                "value": "true"
+            },
+            {
+                "address": "/sensors/7/state/presence",
+                "operator": "dx"
+            }
+        ],
+        "created": "2018-02-23T23:42:38",
+        "lasttriggered": "none",
+        "name": "MotionSensor 7.day-on",
+        "owner": "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU",
+        "recycle": true,
+        "status": "enabled",
+        "timestriggered": 0
+    }
+}

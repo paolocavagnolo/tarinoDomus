@@ -1,0 +1,83 @@
+{
+    "UTC": "2018-02-25T00:26:32",
+    "apiversion": "1.22.0",
+    "backup": {
+        "errorcode": 0,
+        "status": "idle"
+    },
+    "bridgeid": "001788FFFE26C02D",
+    "datastoreversion": "65",
+    "dhcp": true,
+    "factorynew": false,
+    "gateway": "192.168.1.1",
+    "internetservices": {
+        "internet": "disconnected",
+        "remoteaccess": "disconnected",
+        "swupdate": "disconnected",
+        "time": "disconnected"
+    },
+    "ipaddress": "192.168.1.2",
+    "linkbutton": false,
+    "localtime": "2018-02-25T01:26:32",
+    "mac": "00:17:88:26:c0:2d",
+    "modelid": "BSB002",
+    "name": "Philips hue",
+    "netmask": "255.255.255.0",
+    "portalconnection": "connecting",
+    "portalservices": true,
+    "portalstate": {
+        "communication": "disconnected",
+        "incoming": false,
+        "outgoing": false,
+        "signedon": false
+    },
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "replacesbridgeid": null,
+    "starterkitid": "",
+    "swupdate": {
+        "checkforupdate": false,
+        "devicetypes": {
+            "bridge": false,
+            "lights": [],
+            "sensors": []
+        },
+        "notify": false,
+        "text": "",
+        "updatestate": 0,
+        "url": ""
+    },
+    "swupdate2": {
+        "autoinstall": {
+            "on": false,
+            "updatetime": "T14:00:00"
+        },
+        "bridge": {
+            "lastinstall": "2018-01-18T20:58:41",
+            "state": "noupdates"
+        },
+        "checkforupdate": false,
+        "lastchange": "2018-02-24T07:02:57",
+        "state": "unknown"
+    },
+    "swversion": "1711151408",
+    "timezone": "Europe/Rome",
+    "whitelist": {
+        "AAmlo-xKiq0dWxci7WGTl5gBkkc1GjRj0FQZBqXU": {
+            "create date": "2018-02-02T22:44:08",
+            "last use date": "2018-02-25T00:26:32",
+            "name": "Hue 2#HUAWEI VNS-L31"
+        },
+        "Sg8ruEUTVzt4SaqNUF124IfCoOCQesMSul8bY676": {
+            "create date": "2018-02-18T15:55:51",
+            "last use date": "2018-02-24T16:51:46",
+            "name": "Hue#Samsung SM-J320FN"
+        },
+        "xsNe1CZ71oiR-Awe-OBkT6E4ZcbflRyDNnx4WDsB": {
+            "create date": "2018-02-02T20:20:48",
+            "last use date": "2018-02-25T00:26:32",
+            "name": "tarinoDomus#rpi"
+        }
+    },
+    "zigbeechannel": 25
+}

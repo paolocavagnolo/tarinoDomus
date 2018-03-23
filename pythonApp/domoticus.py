@@ -1,5 +1,5 @@
 import asyncio
-import serial
+#import serial
 import requests
 import configparser
 
@@ -7,9 +7,9 @@ config = ConfigParser.RawConfigParser()
 config.read('../data.cfg')
 
 hardware = 'mac'
-hue_bridge_address = '192.168.1.2'
+hue_bridge_address = config.get(debug, 'url')
 
-port = config.get(hardware, 'serial')
+#port = config.get(hardware, 'serial')
 baudrate = config.getint(hardware, 'baudrate')
 userId = config.get(hue,'id')
 

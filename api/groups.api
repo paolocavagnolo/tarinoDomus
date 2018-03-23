@@ -1,0 +1,115 @@
+{
+    "1": {
+        "action": {
+            "alert": "none",
+            "bri": 116,
+            "colormode": "ct",
+            "ct": 443,
+            "on": false
+        },
+        "class": "Living room",
+        "lights": [
+            "16",
+            "4",
+            "6",
+            "7",
+            "9"
+        ],
+        "name": "Soggiorno",
+        "recycle": false,
+        "state": {
+            "all_on": false,
+            "any_on": false
+        },
+        "type": "Room"
+    },
+    "2": {
+        "action": {
+            "alert": "none",
+            "bri": 251,
+            "on": false
+        },
+        "class": "Living room",
+        "lights": [
+            "14",
+            "15"
+        ],
+        "name": "Bagno",
+        "recycle": false,
+        "state": {
+            "all_on": false,
+            "any_on": false
+        },
+        "type": "Room"
+    },
+    "3": {
+        "action": {
+            "alert": "none",
+            "bri": 254,
+            "colormode": "ct",
+            "ct": 366,
+            "on": false
+        },
+        "class": "Living room",
+        "lights": [
+            "5"
+        ],
+        "name": "Antibagno",
+        "recycle": false,
+        "state": {
+            "all_on": false,
+            "any_on": false
+        },
+        "type": "Room"
+    },
+    "4": {
+        "action": {
+            "alert": "none",
+            "bri": 167,
+            "colormode": "xy",
+            "ct": 443,
+            "effect": "none",
+            "hue": 7676,
+            "on": true,
+            "sat": 199,
+            "xy": [
+                0.5016,
+                0.4151
+            ]
+        },
+        "class": "Living room",
+        "lights": [
+            "2",
+            "3",
+            "8",
+            "11",
+            "13"
+        ],
+        "name": "Letto",
+        "recycle": false,
+        "state": {
+            "all_on": true,
+            "any_on": true
+        },
+        "type": "Room"
+    },
+    "5": {
+        "action": {
+            "alert": "none",
+            "bri": 254,
+            "on": false
+        },
+        "class": "Living room",
+        "lights": [
+            "10",
+            "12"
+        ],
+        "name": "Cabina",
+        "recycle": false,
+        "state": {
+            "all_on": false,
+            "any_on": false
+        },
+        "type": "Room"
+    }
+}

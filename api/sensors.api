@@ -1,0 +1,215 @@
+{
+    "1": {
+        "config": {
+            "configured": true,
+            "on": true,
+            "sunriseoffset": 30,
+            "sunsetoffset": -30
+        },
+        "manufacturername": "Philips",
+        "modelid": "PHDL00",
+        "name": "Daylight",
+        "state": {
+            "daylight": false,
+            "lastupdated": "2018-02-23T16:38:00"
+        },
+        "swversion": "1.0",
+        "type": "Daylight"
+    },
+    "2": {
+        "config": {
+            "alert": "none",
+            "battery": 100,
+            "ledindication": false,
+            "on": true,
+            "pending": [],
+            "reachable": true,
+            "usertest": false
+        },
+        "manufacturername": "Philips",
+        "modelid": "SML001",
+        "name": "Hue temperature sensor 1",
+        "state": {
+            "lastupdated": "2018-02-23T23:34:37",
+            "temperature": 1862
+        },
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "6.1.0.18912",
+        "type": "ZLLTemperature",
+        "uniqueid": "00:17:88:01:02:12:2e:04-02-0402"
+    },
+    "3": {
+        "config": {
+            "alert": "none",
+            "battery": 100,
+            "ledindication": false,
+            "on": true,
+            "pending": [],
+            "reachable": true,
+            "sensitivity": 2,
+            "sensitivitymax": 2,
+            "usertest": false
+        },
+        "manufacturername": "Philips",
+        "modelid": "SML001",
+        "name": "Soggiorno sensore",
+        "state": {
+            "lastupdated": "2018-02-23T23:06:01",
+            "presence": false
+        },
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "6.1.0.18912",
+        "type": "ZLLPresence",
+        "uniqueid": "00:17:88:01:02:12:2e:04-02-0406"
+    },
+    "4": {
+        "config": {
+            "alert": "none",
+            "battery": 100,
+            "ledindication": false,
+            "on": true,
+            "pending": [],
+            "reachable": true,
+            "tholddark": 16000,
+            "tholdoffset": 7000,
+            "usertest": false
+        },
+        "manufacturername": "Philips",
+        "modelid": "SML001",
+        "name": "Hue ambient light sensor 1",
+        "state": {
+            "dark": true,
+            "daylight": false,
+            "lastupdated": "2018-02-23T23:30:59",
+            "lightlevel": 0
+        },
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "6.1.0.18912",
+        "type": "ZLLLightLevel",
+        "uniqueid": "00:17:88:01:02:12:2e:04-02-0400"
+    },
+    "5": {
+        "config": {
+            "on": true,
+            "reachable": true
+        },
+        "manufacturername": "Philips",
+        "modelid": "PHA_STATE",
+        "name": "MotionSensor 3.Companion",
+        "recycle": true,
+        "state": {
+            "lastupdated": "2018-02-23T23:08:19",
+            "status": 0
+        },
+        "swversion": "1.0",
+        "type": "CLIPGenericStatus",
+        "uniqueid": "MotionSensor 3.Companion"
+    },
+    "6": {
+        "config": {
+            "alert": "none",
+            "battery": 100,
+            "ledindication": false,
+            "on": true,
+            "pending": [],
+            "reachable": true,
+            "usertest": false
+        },
+        "manufacturername": "Philips",
+        "modelid": "SML001",
+        "name": "Hue temperature sensor 2",
+        "state": {
+            "lastupdated": "2018-02-23T23:34:52",
+            "temperature": 1719
+        },
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "6.1.0.18912",
+        "type": "ZLLTemperature",
+        "uniqueid": "00:17:88:01:02:11:e8:e9-02-0402"
+    },
+    "7": {
+        "config": {
+            "alert": "none",
+            "battery": 100,
+            "ledindication": false,
+            "on": true,
+            "pending": [],
+            "reachable": true,
+            "sensitivity": 2,
+            "sensitivitymax": 2,
+            "usertest": false
+        },
+        "manufacturername": "Philips",
+        "modelid": "SML001",
+        "name": "Letto sensore",
+        "state": {
+            "lastupdated": "2018-02-23T23:28:08",
+            "presence": false
+        },
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "6.1.0.18912",
+        "type": "ZLLPresence",
+        "uniqueid": "00:17:88:01:02:11:e8:e9-02-0406"
+    },
+    "8": {
+        "config": {
+            "alert": "none",
+            "battery": 100,
+            "ledindication": false,
+            "on": true,
+            "pending": [],
+            "reachable": true,
+            "tholddark": 21126,
+            "tholdoffset": 7000,
+            "usertest": false
+        },
+        "manufacturername": "Philips",
+        "modelid": "SML001",
+        "name": "Hue ambient light sensor 2",
+        "state": {
+            "dark": true,
+            "daylight": false,
+            "lastupdated": "2018-02-23T23:32:40",
+            "lightlevel": 10335
+        },
+        "swupdate": {
+            "lastinstall": null,
+            "state": "noupdates"
+        },
+        "swversion": "6.1.0.18912",
+        "type": "ZLLLightLevel",
+        "uniqueid": "00:17:88:01:02:11:e8:e9-02-0400"
+    },
+    "9": {
+        "config": {
+            "on": true,
+            "reachable": true
+        },
+        "manufacturername": "Philips",
+        "modelid": "PHA_STATE",
+        "name": "MotionSensor 7.Companion",
+        "recycle": true,
+        "state": {
+            "lastupdated": "2018-02-23T23:27:14",
+            "status": 1
+        },
+        "swversion": "1.0",
+        "type": "CLIPGenericStatus",
+        "uniqueid": "MotionSensor 7.Companion"
+    }
+}
