@@ -4,7 +4,6 @@ import json
 import time
 
 
-hue_key = 'xsNe1CZ71oiR-Awe-OBkT6E4ZcbflRyDNnx4WDsB'
 url = 'http://192.168.1.2/api/' + hue_key + '/'
 
 def lightsState():

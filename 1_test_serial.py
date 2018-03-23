@@ -5,7 +5,6 @@ import requests
 import time
 
 s = serial.Serial('/dev/ttyUSB0', 115200)
-hueUrl = "http://192.168.1.2/api/xsNe1CZ71oiR-Awe-OBkT6E4ZcbflRyDNnx4WDsB"
 
 homeMood = 'up' 							#up / chill / smooth
 exitTrigger = False 						

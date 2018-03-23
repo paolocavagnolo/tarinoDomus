@@ -1,3 +1,12 @@
+
+ # ----------------------------------------------------------------------------
+ # "THE BEER-WARE LICENSE" (Revision 42):
+ # <paolo.cavagnolo@gmail.com> wrote this file.  As long as you retain this notice you
+ # can do whatever you want with this stuff. If we meet some day, and you think
+ # this stuff is worth it, you can buy me a beer in return.   Paolo Cavagnolo
+ # ----------------------------------------------------------------------------
+ 
+
 import serial
 import asyncio
 import json
@@ -5,7 +14,6 @@ import requests
 import time
 
 s = serial.Serial('/dev/ttyUSB0', 115200)
-hueUrl = "http://192.168.1.124/api/xsNe1CZ71oiR-Awe-OBkT6E4ZcbflRyDNnx4WDsB"
 
 idMot = 1
 idBut = 'a'
