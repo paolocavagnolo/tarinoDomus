@@ -24,3 +24,24 @@
 4. sudo pip3 install pyserial
 5. sudo pip3 install json
 
+# Moteino protocol
+
+## Buttons node
+
+send: id - letter - {1_pushed | 2_released}
+
+## Caldaia node
+
+receive: {100_on | 90_off}
+
+## Gateway
+
+receive: id - letter - {1_pushed | 2_released}
+serial_send: "<,#, id_sender, RSSI, id, letter, {1|2},>"
+
+serial_receive: {100 | 90}
+send: "{100_on | 90_off}"
+
+# Telegram
+
+1. sudo pip3 install telepot
