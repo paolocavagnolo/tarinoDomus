@@ -10,7 +10,7 @@
 
 NAME="goTarino"
 
-PROGRAM_PATH="/home/pi/4.py"
+PROGRAM_PATH="/home/pi/telepot-12.6/1.py"
 ERROR_PATH="/tmp/tarinoLog_error.txt"
 LOG_PATH="/tmp/tarinoLog_normal.txt"
 SCRIPT="python3 $PROGRAM_PATH >$ERROR_PATH 2>$LOG_PATH &"

@@ -23,6 +23,7 @@
 3. sudo pip3 install asyncio
 4. sudo pip3 install pyserial
 5. sudo pip3 install json
+5. sudo pip3 install configparser
 
 # Moteino protocol
 
