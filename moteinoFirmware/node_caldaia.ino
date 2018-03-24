@@ -3,7 +3,7 @@
 
 #define Reset_AVR() wdt_enable(WDTO_30MS); while(1) {}
 
-#define NODEID      12      // node ID used for this unit
+#define NODEID      20      // node ID used for this unit
 #define NETWORKID   492
 #define GATEWAYID   1
 
@@ -25,7 +25,7 @@
 // 11: cucina
 // 20: caldaia
 
-#define LED 20 // Moteinos hsave LEDs on D9
+#define LED 9 // Moteinos hsave LEDs on D9
 
 boolean requestACK = false;
 
