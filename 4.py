@@ -30,12 +30,13 @@ ct = 154
 mx2h = [[1,1,1],[3,1,1],[3,3,1],[2,2,3],[2,2,2],[4,3,3],[4,5,5],[5,5,4],[1,1,1],[4,4,4]]
 bright = [255,150,50]
 colort = [154,400,454]
+temp = [20.0,20.0]
 
 eventTrigger = False
 
 async def on_chat_message(msg):
 
-    global s
+    global s, temp
 
     content_type, chat_type, chat_id = telepot.glance(msg)
     print('Chat:', content_type, chat_type, chat_id)
@@ -64,10 +65,10 @@ async def on_chat_message(msg):
       elif command == "/temp":
         data = requests.get(hueUrl + "/sensors/")
         temps = json.loads(json.dumps(data.json(), sort_keys=True))
-        temp_sogg = temps['2']['state']['temperature']/100
-        temp_letto = temps['6']['state']['temperature']/100
+        temp[0] = temps['2']['state']['temperature']/100 + 0  #correzione in base al termometro di motta
+        temp[1] = temps['6']['state']['temperature']/100 + 2  #correzione in base al termometro di ciapu
 
-        await bot.sendMessage(chat_id, "Soggiorno: " + str(temp_sogg) + '\n' + "Letto: " + str(temp_letto))
+        await bot.sendMessage(chat_id, "Soggiorno: " + str(temp[0]) + '\n' + "Letto: " + str(temp[1]))
 
       else:
         await bot.sendMessage(chat_id, "Non ho capito, forse sono sssstupido. O forse no, forse lo sei tu")

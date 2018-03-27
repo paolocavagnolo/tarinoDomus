@@ -4,6 +4,9 @@
 #define PIN_a 14  // the pin we are interested in
 #define PIN_b 15  // the pin we are interested in
 #define PIN_c 16  // the pin we are interested in
+
+#define TRSHLD 50
+
 volatile byte tA = 0;  // a counter to see how many times the pin has changed
 volatile byte tB = 0;  // a counter to see how many times the pin has changed
 volatile byte tC = 0;  // a counter to see how many times the pin has changed
@@ -41,12 +44,9 @@ RFM69 radio;
 void setup() {
   pinMode(LED, OUTPUT);
 
-  pinMode(PIN_a, INPUT);     //set the pin to input
-  digitalWrite(PIN_a, HIGH); //use the internal pullup resistor
-  pinMode(PIN_b, INPUT);     //set the pin to input
-  digitalWrite(PIN_b, HIGH); //use the internal pullup resistor
-  pinMode(PIN_c, INPUT);     //set the pin to input
-  digitalWrite(PIN_c, HIGH); //use the internal pullup resistor
+  pinMode(PIN_a, INPUT_PULLUP);     
+  pinMode(PIN_b, INPUT_PULLUP);     
+  pinMode(PIN_c, INPUT_PULLUP);     
 
   radio.initialize(FREQUENCY, NODEID, NETWORKID);
   radio.encrypt(ENCRYPTKEY); //OPTIONAL
@@ -67,7 +67,7 @@ void loop() {
 
 
   //check any button pushed
-  if (!digitalRead(PIN_a) && !a_up){
+  if (analogRead(PIN_a) < TRSHLD && !a_up){
     message[0] = 'a';
     message[1] = '1';
     radio.sendWithRetry(GATEWAYID,message, 2);
@@ -75,7 +75,7 @@ void loop() {
     digitalWrite(LED, HIGH);
     delay(50);
   }
-  if (digitalRead(PIN_a) && a_up){
+  if (analogRead(PIN_a) > TRSHLD && a_up){
     message[0] = 'a';
     message[1] = '2';
     radio.sendWithRetry(GATEWAYID,message, 2);
@@ -84,7 +84,7 @@ void loop() {
     digitalWrite(LED, LOW);
   }
   //B
-  if (!digitalRead(PIN_b) && !b_up){
+  if (analogRead(PIN_b) < TRSHLD && !b_up){
     message[0] = 'b';
     message[1] = '1';
     radio.sendWithRetry(GATEWAYID,message, 2);
@@ -92,7 +92,7 @@ void loop() {
     digitalWrite(LED, HIGH);
     delay(50);
   }
-  if (digitalRead(PIN_b) && b_up){
+  if (analogRead(PIN_b) > TRSHLD && b_up){
     message[0] = 'b';
     message[1] = '2';
     radio.sendWithRetry(GATEWAYID,message, 2);
@@ -101,7 +101,7 @@ void loop() {
     digitalWrite(LED, LOW);
   }
   //C
-  if (!digitalRead(PIN_c) && !c_up){
+  if (analogRead(PIN_c) < TRSHLD && !c_up){
     message[0] = 'c';
     message[1] = '1';
     radio.sendWithRetry(GATEWAYID,message, 2);
@@ -109,7 +109,7 @@ void loop() {
     digitalWrite(LED, HIGH);
     delay(50);
   }
-  if (digitalRead(PIN_c) && c_up){
+  if (analogRead(PIN_c) > TRSHLD && c_up){
     message[0] = 'c';
     message[1] = '2';
     radio.sendWithRetry(GATEWAYID,message, 2);
