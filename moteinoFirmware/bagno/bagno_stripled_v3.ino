@@ -41,10 +41,10 @@ void setup() {
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);  // GRB ordering is typical
 
   FastLED.setTemperature(Candle);
-  FastLED.setBrightness(255);
+  FastLED.setBrightness(0);
 
   for (uint8_t ll = 0; ll < NUM_LEDS; ll++) {
-    leds[ll] = CRGB(0, 0, 0);
+    leds[ll] = CRGB(255, 140, 100);
   }
   FastLED.show();
 
@@ -63,47 +63,68 @@ bool pLed = true;
 
 unsigned long delta = 0;
 
-uint8_t bri = 0;
+int bri = 0;
+int idx = 0;
+
+unsigned long ts = 0;
+
+bool rampUp = false;
+bool rampDown = false;
+
+bool cc = false;
 
 void loop() {
 
-  if (pLed) {
-    delta = millis() - timeAS;
-    
-    if (delta > 1500) {
-      delta = 1500;
+  if (cc) {
+    cc = false;
+    FastLED.setBrightness(dim8_lin(bri));
+    FastLED.show();
+  }
+
+  if (rampUp) {
+
+    if ((millis() - ts) > 20) {
+      ts = millis();
+      cc = true;
+      bri=bri+1;
     }
-    
-    bri = map(delta, 0, 1500, 0, 255);
-    
+
+    if (bri >= 200) {
+      bri = 200;
+      rampUp = false;
+    }
+  }
+
+  if (rampDown) {
+
+    if ((millis() - ts) > 20) {
+      ts = millis();
+      cc = true;
+      bri=bri-1;
+    }
+
+    if (bri <= 0) {
+      bri = 0;
+      rampDown = false;
+    }
+  }
+
+  if (pLed) {
+  
     if (lightState) {
       lightState = false;
-      for (uint8_t ll = 0; ll < NUM_LEDS; ll++) {
-        leds[ll] = CRGB(0, 0, 0);
-      }
-      for (int j=0;j<10;j++) {
-        EVERY_N_MILLISECONDS(250) {
-          fadeToBlackBy(leds, NUM_LEDS, 64);  // 64/255 = 25%
-        }
-      }
-      FastLED.show();
+      //bri = 0;
+      rampUp = true;
+      rampDown = false;
     }
     else {
       lightState = true;
-      for (uint8_t ll = 0; ll < NUM_LEDS; ll++) {
-        leds[ll] = CRGB(255, 140, 100);
-      }
-      for (uint8_t i=0; i<bri; i=i++) {
-        FastLED.setBrightness(i);
-        FastLED.show();
-        delay(10);
-      }
-      
+      //bri = 200;
+      rampDown = true;
+      rampUp = false;
     }
-
     pLed = false;
   }
-
 
 
   //B
@@ -111,13 +132,15 @@ void loop() {
     b_up = true;
     timeAS = millis();
     digitalWrite(LED, HIGH);
-    delay(50);
+    delay(150);
   }
   if (analogRead(PIN_b) > TRSHLD && b_up) {
     b_up = false;
     pLed = true;
+    idx = 0;
     tB++;
     digitalWrite(LED, LOW);
+    delay(150);
   }
 
 
